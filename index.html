@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Candidate New Jobs Update</title>
+    <title>Reject Application Template</title>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
       * {
         font-family: "Plus Jakarta Sans", sans-serif;
-        font-size: 12px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-size: 12px;
       }
 
       body {
         box-sizing: border-box;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         padding: 20px 5px;
+        font-size: 12px;
       }
 
       .text-sm {
@@ -66,6 +67,12 @@
         padding: 40px 20px;
       }
 
+      @media (min-width: 768px) {
+        .pad-md {
+          padding: 35px 35px !important;
+        }
+      }
+
       .text-center {
         text-align: center;
       }
@@ -99,81 +106,6 @@
       .text-gray {
         color: #434343;
       }
-
-      .w-fit {
-        width: fit-content !important;
-      }
-      .h-fit {
-        height: fit-content;
-      }
-
-      .container {
-        width: 100%;
-        font-size: 0;
-      }
-
-      .left,
-      .right {
-        display: inline-block;
-        vertical-align: top;
-        box-sizing: border-box;
-      }
-
-      .left {
-        width: 72%;
-      }
-
-      .border-b {
-        border-bottom: 1px solid rgba(67, 67, 67, 0.14);
-      }
-
-      .container-items {
-        display: inline-block;
-        width: 100%;
-      }
-
-      .container-item {
-        display: inline-block;
-        margin-top: 10px;
-        margin-right: 10px;
-        color: #434343;
-        margin-bottom: 8px;
-        width: calc(44% - 10px);
-        box-sizing: border-box;
-      }
-
-      .container-item-2 {
-        margin-right: 10px;
-      }
-
-      .container-item img {
-        vertical-align: middle;
-      }
-
-      .container-item span {
-        vertical-align: middle;
-        font-size: 10px !important;
-      }
-
-      @media (min-width: 600px) {
-        .container-item {
-          width: auto;
-          margin-right: 20px;
-        }
-      }
-
-      @media (min-width: 768px) {
-        .pad-md {
-          padding: 35px 35px !important;
-        }
-
-        .job-card {
-          padding: 0;
-        }
-        .left {
-          width: 85%;
-        }
-      }
     </style>
   </head>
 
@@ -188,6 +120,7 @@
         padding: 35px 15px;
         max-width: 661px;
         width: 100%;
+        overflow-x: hidden;
       "
     >
       <img
@@ -223,7 +156,7 @@
 
         <div class="mx-auto">
           <img
-            src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/new-jobs-update-grad.svg"
+            src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/assets/application-viewed-grad.svg"
             alt=""
             class="mx-auto"
           />
@@ -234,8 +167,17 @@
         class="mx-auto text-center text-gradient"
         style="font-weight: 700; padding-bottom: 15px"
       >
-        Exciting New Jobs
+        Application Status
       </h2>
+
+      <div
+        class=""
+        style="
+          border: 0.65px solid rgba(38, 133, 202, 0.2);
+          border-style: dashed;
+          margin-bottom: 30px;
+        "
+      ></div>
 
       <div
         class="mx-auto text-sm"
@@ -244,365 +186,46 @@
         <h2>Hi Bola,</h2>
       </div>
 
-      <p class="mx-auto text-center text-xs" style="padding-bottom: 24px">
-        You have 7 new job matches based on your search criteria.
+      <p
+        class="mx-auto text-center text-xs"
+        style="padding-bottom: 52px; font-size: 12px !important"
+      >
+        Your Application For
+        <span style="color: #2685ca">
+          Biogenetics And Barcoding Lead role
+        </span>
+        at
+        <span style="color: #5049e1">
+          Emzor Pharmaceutical Industries Limited
+        </span>
+        has been viewed.
+      </p>
+
+      <p class="mx-auto text-center" style="margin-bottom: 24px">
+        <span>Thanks,</span> <br />
+        <span>The JobPlaza team</span>
       </p>
 
       <div
+        class=""
         style="
-          border: 0.65px solid #434343;
+          border: 0.65px solid rgba(38, 133, 202, 0.2);
           border-style: dashed;
           margin-bottom: 30px;
+          margin-top: 20px;
         "
       ></div>
 
-      <!-- All Job Cards from start  -->
-      <div
-        class="border-b job-card"
-        style="padding: 5px 10px; margin-top: 30px"
-      >
-        <div class="h-fit" style="width: 100%">
-          <div class="left" style="display: inline-block">
-            <p class="w-fit text-gradient" style="font-weight: 600">
-              Senior Product Designer
-            </p>
-
-            <p class="w-fit" style="margin-top: 15px">
-              <span style="padding-right: 10px; font-weight: 600"
-                >Apple.Inc</span
-              >
-
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/Verification.svg"
-                alt=""
-              />
-            </p>
-          </div>
-
-          <div class="right" style="margin-left: auto; width: auto">
-            <button
-              class="border w-fit"
-              style="
-                background: transparent;
-                margin-left: auto;
-                padding: 6px 10px;
-                display: inline;
-                border-radius: 8px;
-                border-color: #5049e1;
-              "
-            >
-              Apply now
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="container-items"
-          style="margin-top: 5px; color: #434343; margin-top: 10px"
-        >
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/MapPinLine.svg"
-              alt=""
-            />
-            <span> Lagos, Nigeria </span>
-          </div>
-
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/office-building.svg"
-              alt=""
-            />
-            <span>Onsite</span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/briefcase.svg"
-              alt=""
-            />
-            <span> Full Time </span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <span style="text-wrap: nowrap">
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/currency-dollar.svg"
-                alt=""
-              />
-              Salary: N 50,000,000,000/Month
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="border-b job-card"
-        style="padding: 5px 10px; margin-top: 30px"
-      >
-        <div class="h-fit" style="width: 100%">
-          <div class="left" style="display: inline-block">
-            <p class="w-fit text-gradient" style="font-weight: 600">
-              Senior Product Designer
-            </p>
-
-            <p class="w-fit" style="margin-top: 15px">
-              <span style="padding-right: 10px; font-weight: 600"
-                >Apple.Inc</span
-              >
-
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/Verification.svg"
-                alt=""
-              />
-            </p>
-          </div>
-
-          <div class="right" style="margin-left: auto; width: auto">
-            <button
-              class="border w-fit"
-              style="
-                background: transparent;
-                margin-left: auto;
-                padding: 6px 10px;
-                display: inline;
-                border-radius: 8px;
-                border-color: #5049e1;
-              "
-            >
-              Apply now
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="container-items"
-          style="margin-top: 5px; color: #434343; margin-top: 10px"
-        >
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/MapPinLine.svg"
-              alt=""
-            />
-            <span> Lagos, Nigeria </span>
-          </div>
-
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/office-building.svg"
-              alt=""
-            />
-            <span>Onsite</span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/briefcase.svg"
-              alt=""
-            />
-            <span> Full Time </span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <span style="text-wrap: nowrap">
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/currency-dollar.svg"
-                alt=""
-              />
-              Salary: N 50,000,000,000/Month
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="border-b job-card"
-        style="padding: 5px 10px; margin-top: 30px"
-      >
-        <div class="h-fit" style="width: 100%">
-          <div class="left" style="display: inline-block">
-            <p class="w-fit text-gradient" style="font-weight: 600">
-              Senior Product Designer
-            </p>
-
-            <p class="w-fit" style="margin-top: 15px">
-              <span style="padding-right: 10px; font-weight: 600"
-                >Apple.Inc</span
-              >
-
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/Verification.svg"
-                alt=""
-              />
-            </p>
-          </div>
-
-          <div class="right" style="margin-left: auto; width: auto">
-            <button
-              class="border w-fit"
-              style="
-                background: transparent;
-                margin-left: auto;
-                padding: 6px 10px;
-                display: inline;
-                border-radius: 8px;
-                border-color: #5049e1;
-              "
-            >
-              Apply now
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="container-items"
-          style="margin-top: 5px; color: #434343; margin-top: 10px"
-        >
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/MapPinLine.svg"
-              alt=""
-            />
-            <span> Lagos, Nigeria </span>
-          </div>
-
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/office-building.svg"
-              alt=""
-            />
-            <span>Onsite</span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/briefcase.svg"
-              alt=""
-            />
-            <span> Full Time </span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <span style="text-wrap: nowrap">
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/currency-dollar.svg"
-                alt=""
-              />
-              Salary: N 50,000,000,000/Month
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="border-b job-card"
-        style="padding: 5px 10px; margin-top: 30px"
-      >
-        <div class="h-fit" style="width: 100%">
-          <div class="left" style="display: inline-block">
-            <p class="w-fit text-gradient" style="font-weight: 600">
-              Senior Product Designer
-            </p>
-
-            <p class="w-fit" style="margin-top: 15px">
-              <span style="padding-right: 10px; font-weight: 600"
-                >Apple.Inc</span
-              >
-
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/Verification.svg"
-                alt=""
-              />
-            </p>
-          </div>
-
-          <div class="right" style="margin-left: auto; width: auto">
-            <button
-              class="border w-fit"
-              style="
-                background: transparent;
-                margin-left: auto;
-                padding: 6px 10px;
-                display: inline;
-                border-radius: 8px;
-                border-color: #5049e1;
-              "
-            >
-              Apply now
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="container-items"
-          style="margin-top: 5px; color: #434343; margin-top: 10px"
-        >
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/MapPinLine.svg"
-              alt=""
-            />
-            <span> Lagos, Nigeria </span>
-          </div>
-
-          <div style="margin-bottom: 8px" class="container-item">
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/office-building.svg"
-              alt=""
-            />
-            <span>Onsite</span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <img
-              src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/briefcase.svg"
-              alt=""
-            />
-            <span> Full Time </span>
-          </div>
-
-          <div
-            style="margin-bottom: 8px"
-            class="container-item-2 container-item"
-          >
-            <span style="text-wrap: nowrap">
-              <img
-                src="https://jobplaza-dev-uploads.s3.amazonaws.com/uploads/account/logo/currency-dollar.svg"
-                alt=""
-              />
-              Salary: N 50,000,000,000/Month
-            </span>
-          </div>
-        </div>
-      </div>
-      <!-- All Job Cards end  -->
-
       <div
         class="mx-auto text-center text-xxs text-gray"
-        style="padding-top: 54px; margin-bottom: 12px; font-weight: 300"
+        style="
+          margin-top: 24px;
+          margin-bottom: 12px;
+          padding-top: 24px;
+          font-weight: 300;
+        "
       >
-        Please click the button below to find more jobs
+        Login to your account to view your application(s)
       </div>
 
       <div
@@ -618,24 +241,24 @@
             color: white;
           "
         >
-          Find Jobs
+          View Application
         </button>
       </div>
 
       <div
         class=""
         style="
-          border: 0.65px solid #434343;
+          border: 0.65px solid rgba(38, 133, 202, 0.2);
           border-style: dashed;
           margin-bottom: 30px;
-          margin-top: 55px;
+          margin-top: 20px;
         "
       ></div>
 
       <p class="mx-auto text-center" style="padding-top: 37px; color: #8a8a8a">
         You are receiving this email because you applied for a job opening on
-        JobPlaza. <br />
-        This is an automated message, please do not reply this message.
+        JobPlaza. This is an automated message, please do not reply this
+        message.
       </p>
 
       <p
